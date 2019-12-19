@@ -16,3 +16,5 @@ Imports:
     dplyr,
     purrr,
     rtweet
+URL: https://github.com/malcolmbarrett/epibot
+BugReports: https://github.com/malcolmbarrett/epibot/issues
