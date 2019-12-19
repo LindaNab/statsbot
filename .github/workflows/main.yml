@@ -1,10 +1,10 @@
 name: Retweet epitwitter
 'on':
-  push:
-    branches:
-      - master
-#  schedule:
-#    - cron:  '*/3 * * * *'
+#  push:
+#    branches:
+#      - master
+  schedule:
+    - cron:  '0 * * * *'
 
 jobs:
   build:
