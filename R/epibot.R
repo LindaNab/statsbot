@@ -44,6 +44,7 @@ if (!is_empty(epitwitter_tweets)) {
 
 if (nrow(epitwitter_tweets) > 5) {
   tweets_to_retweet <- epitwitter_tweets %>%
+    filter(tolower(screen_name) != "researchepi") %>%
     sample_n(5) %>%
     arrange(desc(created_at)) %>%
     pull(status_id)
