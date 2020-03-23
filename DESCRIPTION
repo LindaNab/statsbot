@@ -1,13 +1,12 @@
-Package: epibot
-Title: Deploy the epibot
+Package: statsbot
+Title: Deploy the statsbot
 Version: 0.0.1
 Authors@R: 
-    person(given = "Malcolm",
-           family = "Barrett",
+    person(given = "Linda",
+           family = "Nab",
            role = c("aut", "cre"),
-           email = "malcolmbarrett@gmail.com",
-           comment = c(ORCID = "0000-0003-0299-5825"))
-Description: Deploy the epibot Twitter bot, which retweets the epitwitter hashtag.
+           email = "lindanab4@gmail.com")
+Description: Deploy the statsbot Twitter bot, which retweets the statstwitter hashtag. Code is based on the epibot, available here: https://github.com/malcolmbarrett/epibot.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -16,5 +15,5 @@ Imports:
     dplyr,
     purrr,
     rtweet
-URL: https://github.com/malcolmbarrett/epibot
-BugReports: https://github.com/malcolmbarrett/epibot/issues
+URL: https://github.com/lindanab/statsbot
+BugReports: https://github.com/lindanab/statsbot/issues
