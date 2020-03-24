@@ -15,10 +15,10 @@ jobs:
           Rscript -e "remotes::install_deps(dependencies = TRUE)"
       - name: Run statsbot script
         env:
-          EPIBOT_ACCESS_SECRET: ${{ secrets.STATSBOT_ACCESS_SECRET }}
-          EPIBOT_ACCESS_TOKEN: ${{ secrets.STATSBOT_ACCESS_TOKEN }}
-          EPIBOT_CONSUMER_KEY: ${{ secrets.STATSBOT_CONSUMER_KEY }}
-          EPIBOT_CONSUMER_SECRET: ${{ secrets.STATSBOT_CONSUMER_SECRET }}
+          STATSBOT_ACCESS_SECRET: ${{ secrets.STATSBOT_ACCESS_SECRET }}
+          STATSBOT_ACCESS_TOKEN: ${{ secrets.STATSBOT_ACCESS_TOKEN }}
+          STATSBOT_CONSUMER_KEY: ${{ secrets.STATSBOT_CONSUMER_KEY }}
+          STATSBOT_CONSUMER_SECRET: ${{ secrets.STATSBOT_CONSUMER_SECRET }}
         run: |-
           Rscript -e "source('R/statsbot.R')"
       - name: Commit results
