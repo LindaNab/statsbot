@@ -4,8 +4,6 @@ on: push
 #    - cron:  '0 * * * *'
 
 jobs:
-  job-name: Retweet_statstwitter
-    if: github.repository == 'LindaNab/statsbot'
   build:
     runs-on: macOS-latest
     steps:
