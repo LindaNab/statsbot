@@ -7,7 +7,7 @@ jobs:
   build:
     runs-on: macOS-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - uses: r-lib/actions/setup-r@v1
       - name: Install Package Dependencies
         run: |-
@@ -23,5 +23,5 @@ jobs:
           Rscript -e "source('R/statsbot.R')"
       - name: Commit results
         run: |
-          git commit -m "Update data in data/" -a || echo "No changes to commit"
+          git commit -m "Update data" -a || echo "No changes to commit"
           git push https://${{github.actor}}:${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}.git HEAD:${{ github.ref }} || echo "No changes to commit"
