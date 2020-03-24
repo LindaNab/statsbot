@@ -1,9 +1,11 @@
 name: Retweet statstwitter
-on:
-  schedule:
-    - cron:  '0 * * * *'
+on: push
+#  schedule:
+#    - cron:  '0 * * * *'
 
 jobs:
+  job-name:
+    if: github.repository == 'LindaNab/statsbot'
   build:
     runs-on: macOS-latest
     steps:
