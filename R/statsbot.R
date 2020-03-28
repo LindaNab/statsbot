@@ -73,7 +73,7 @@ if (!is_empty(statstwitter_tweets)) {
   }
   ## save shareable data (only status_ids)
   saveRDS(statstwitter_tweets[, "status_id"], file = file)
-}
+} else print("No new #statstwitter tweets out there")
 
 # retweet tweets (all with a probability of 0.95 of getting retweeted) ---------
 if (!is.null(tweets_to_retweet)) {
@@ -82,4 +82,4 @@ if (!is.null(tweets_to_retweet)) {
                token = statstwitter_token())
     Sys.sleep(20)
   })
-}
+} else print("No tweets selected")
